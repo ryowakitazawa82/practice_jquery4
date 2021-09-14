@@ -15,9 +15,17 @@
 // 	});
 // });
 
+// thisで簡略化
+// $(function(){
+// 	$("button").click(function(){
+// 		$(this).html("Click");
+// 		$(this).css("background","#000033");
+// 	});
+// });
+
+// メソッドチェーン
 $(function(){
 	$("button").click(function(){
-		$(this).html("Click");
-		$(this).css("background","#000033");
+		$(this).html("Click").css("background","#000033");
 	});
 });
